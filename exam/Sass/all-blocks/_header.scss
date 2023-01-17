@@ -1,0 +1,73 @@
+.header__nav {
+    @include space-between;
+    margin-top: 22px;
+    @include tablet__media;
+}
+
+.nav {
+    @include space-between;
+    @include phone__media {
+        display: none;
+    }
+    &__link {
+        font-family: $mainfont;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        margin-right: 32px;
+    }
+}
+
+.btn {
+    padding: 14px 39px;
+    font-family: $mainfont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FCB72B;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    &__none {
+        @include phone__media {
+            display: none;
+        }
+    }
+}
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #FCB72B;
+    border: 1px solid #FCB72B;
+}
+
+.menu__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+}
+
+.container {
+    @include tablet__media {
+        padding: 0 97px;
+        max-width: 768px;
+    }
+    @include phone__media {
+        padding: 0 32px;
+    }
+}
+
+.logo {
+    @include phone__media {
+        width: 75.5px;
+        height: 20px;
+        position: relative;
+        left: 100px;
+    }
+}

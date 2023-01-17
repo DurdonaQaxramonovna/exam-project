@@ -1,0 +1,16 @@
+@mixin tablet__media {
+   @media  (max-width: 768px) {
+    @content;
+   }
+}
+
+@mixin phone__media {
+    @media (max-width: 375px) {
+     @content;
+    }
+}
+
+@mixin  space-between {
+    display: flex;
+    justify-content: space-between;
+}

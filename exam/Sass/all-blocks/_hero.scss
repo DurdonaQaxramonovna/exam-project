@@ -1,0 +1,74 @@
+.hero {
+    background-image: url(../../public/img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 21px;
+    @include tablet__media {
+        background-image: url(../../public/img/tabler-hero-bg.jpg);
+    }
+    @include phone__media {
+        background-image: url(../../public/img/phone-hero-bg.png);
+    }
+    &__title {
+        font-family: $mainfont;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        max-width: 500px;
+        padding-top: 153px;
+        @include tablet__media {
+            text-align: center;
+            padding-top: 137px;
+        }
+        @include phone__media {
+            width: 311px;
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -1.78571px;
+            padding-top: 115px;
+        }
+    }
+    &__text {
+        font-family: $textfont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        // max-width: 405px;
+        margin-top: 40px;
+        @include tablet__media {
+            // max-width: 573px;
+            margin-top: 24px;
+            text-align: center;
+        }
+        @include phone__media {
+            font-size: 15px;
+            line-height: 25px;
+            // max-width: 311px;
+            margin-top: 10px;
+            // width: 100%;
+        }
+    }
+    &__btn {
+        margin-top: 40px;
+        // position: relative;
+        // left: 55px;
+        @include tablet__media {
+            margin-top: 32px;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            left: 35%;
+        }
+        @include phone__media {
+            margin-top: 26px;
+            left: 20%;
+        }
+    }
+}
+

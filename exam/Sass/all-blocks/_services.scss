@@ -1,0 +1,93 @@
+.services {
+
+    padding-top: 160px;
+    @include tablet__media {
+        padding-top: 122px;
+    }
+    &__line {
+        position: relative;
+        top: 40px;
+        z-index: -1;
+        @include tablet__media {
+            // display: none;
+            rotate: 90deg;
+            right: 360px;
+            top: 0;
+        }
+        @include phone__media {
+            display: none;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        @include tablet__media {
+            display: block;
+        }
+    }
+}
+
+.services__box {
+    // display: flex;
+    margin-right: 30px;
+    @include tablet__media {
+        display: flex;
+        justify-content: space-between;
+    }
+    @include phone__media {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 48px;
+    }
+    &--title {
+        font-family: $mainfont;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: #495567;
+        margin-top: 40px;
+        @include tablet__media {
+            margin-left: 79px;
+        }
+        @include phone__media {
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: -0.892857px;
+            text-align: center;
+            width: 311px;
+            margin-left: 0;
+            margin-top: 24px;
+        }
+    }
+    &--subtitle {
+        font-family: $textfont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        width: 350px;
+        margin-top: 27px;
+        @include tablet__media {
+            width: 398px;
+            margin-left: 79px;
+        }
+        @include phone__media {
+          margin-top: 24px;  
+          width: 311px;
+          text-align: center;
+          margin-top: 24px;
+          margin-left: 0;
+        }
+    }
+}
+
+.services__icon {
+    width: 56px;
+    height: 56px;
+    @include phone__media {
+        position: relative;
+    left: 130px;
+    }
+}
