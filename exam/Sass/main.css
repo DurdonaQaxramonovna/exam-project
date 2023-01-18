@@ -323,6 +323,18 @@
   color: #495567;
   width: 445px;
 }
+@media (max-width: 768px) {
+  .benefits__title {
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  .benefits__title {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.42857px;
+  }
+}
 
 .benefits__subtitle {
   font-family: "LexendDeca";
@@ -334,9 +346,27 @@
   width: 445px;
   margin-top: 24px;
 }
+@media (max-width: 768px) {
+  .benefits__subtitle {
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  .benefits__subtitle {
+    width: 311px;
+    position: relative;
+    left: 60px;
+  }
+}
 
 .benefitd__btn {
   margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .benefitd__btn {
+    position: relative;
+    left: 150px;
+  }
 }
 
 .benefits__wrapper {
@@ -344,15 +374,30 @@
   margin-top: 168px;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .benefits__wrapper {
+    flex-direction: column;
+  }
+}
 
 .benefits__img {
   position: relative;
   left: 128.9px;
 }
+@media (max-width: 768px) {
+  .benefits__img {
+    left: 200px;
+  }
+}
 
 .benefits__img2 {
   position: relative;
   right: 210px;
+}
+@media (max-width: 768px) {
+  .benefits__img2 {
+    right: -10px;
+  }
 }
 
 .benefits__img3 {
@@ -363,4 +408,171 @@
 .benefits-margin {
   position: relative;
   left: 110px;
+}
+
+.benefits-tablet {
+  display: none;
+}
+@media (max-width: 768px) {
+  .benefits-tablet {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .dur {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits__wrapper img {
+    margin-bottom: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-margin1 {
+    position: relative;
+    left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper-tablet {
+    position: relative;
+    right: 100px;
+  }
+}
+
+.sign {
+  background-image: url(../../public/img/sign-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+@media (max-width: 768px) {
+  .sign {
+    background-image: url(../../public/img/sign-in-tablet.png);
+  }
+}
+@media (max-width: 375px) {
+  .sign {
+    background-image: url(../../public/img/sign-in-tablet.png);
+  }
+}
+
+.sign__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .sign__wrapper {
+    display: block;
+    text-align: center;
+    position: relative;
+    left: 200px;
+  }
+}
+@media (max-width: 375px) {
+  .sign__wrapper {
+    left: 100px;
+  }
+}
+
+.sign__title {
+  font-family: "SpaceMono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  max-width: 315px;
+  margin-top: 102px;
+}
+@media (max-width: 375px) {
+  .sign__title {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -1.42857px;
+    max-width: 311px;
+  }
+}
+
+.appstore {
+  width: 159px;
+  height: 56px;
+  background: #E5ECF4;
+  border-radius: 4px;
+  padding: 9px 16px;
+  display: flex;
+  margin-right: 18px;
+}
+@media (max-width: 375px) {
+  .appstore {
+    width: 113.57px;
+    height: 40px;
+  }
+}
+.appstore__span {
+  font-family: "SpaceMono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: -0.446429px;
+  color: #495567;
+  margin-left: 12px;
+}
+@media (max-width: 375px) {
+  .appstore__span {
+    margin-left: 0;
+    color: #495567;
+    font-size: 8px;
+    line-height: 10px;
+    position: relative;
+    bottom: 5px;
+    text-align: start;
+  }
+}
+.appstore__link {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.892857px;
+  color: #495567;
+  margin-left: 12px;
+}
+@media (max-width: 375px) {
+  .appstore__link {
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 0;
+    position: relative;
+    bottom: 10px;
+  }
+}
+
+.apps {
+  display: flex;
+  position: relative;
+  top: 70px;
+}
+
+@media (max-width: 768px) {
+  .get-in-margin {
+    position: relative;
+    right: 25px;
+  }
+}
+@media (max-width: 375px) {
+  .get-in-margin {
+    position: relative;
+    right: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */
