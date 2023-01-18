@@ -2,12 +2,20 @@
     @include space-between;
     margin-top: 22px;
     @include tablet__media;
+    @include phone__media {
+        display: block;
+    }
 }
 
 .nav {
     @include space-between;
     @include phone__media {
         display: none;
+    }
+    &__item {
+        @include phone__media {
+            margin-top: 16px;
+        }
     }
     &__link {
         font-family: $mainfont;
@@ -55,7 +63,7 @@
 
 .container {
     @include tablet__media {
-        padding: 0 97px;
+        padding: 0 40px;
         max-width: 768px;
     }
     @include phone__media {

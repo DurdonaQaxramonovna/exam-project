@@ -23,7 +23,7 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 97px;
+    padding: 0 40px;
     max-width: 768px;
   }
 }
@@ -38,6 +38,12 @@
   justify-content: space-between;
   margin-top: 22px;
 }
+@media (max-width: 375px) {
+  .header__nav {
+    display: block;
+  }
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -45,6 +51,11 @@
 @media (max-width: 375px) {
   .nav {
     display: none;
+  }
+}
+@media (max-width: 375px) {
+  .nav__item {
+    margin-top: 16px;
   }
 }
 .nav__link {
@@ -93,7 +104,7 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 97px;
+    padding: 0 40px;
     max-width: 768px;
   }
 }
@@ -578,8 +589,14 @@
 }
 
 .footer {
-  height: 96px;
+  min-height: 96px;
   background: #333A44;
+}
+@media (max-width: 375px) {
+  .footer {
+    width: 375px;
+    height: 438px;
+  }
 }
 
 .fa-brands {
@@ -592,4 +609,26 @@
 
 .footer-nav {
   padding-top: 25px;
+}
+@media (max-width: 375px) {
+  .footer-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav__footer {
+    display: block;
+    position: relative;
+    top: 80px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer__icons {
+    position: relative;
+    top: 180px;
+    left: 80px;
+  }
 }/*# sourceMappingURL=main.css.map */

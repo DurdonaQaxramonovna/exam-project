@@ -19,7 +19,7 @@
 
   .container {
     @include tablet__media {
-        padding: 0 97px;
+        padding: 0 40px;
         max-width: 768px;
     }
     @include phone__media {
