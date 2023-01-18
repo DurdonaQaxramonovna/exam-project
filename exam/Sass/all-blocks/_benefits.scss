@@ -58,14 +58,14 @@
 }
 
 .benefits__img {
-    position: relative;
-    left: 128.9px;
+    // position: relative;
+    // left: 128.9px;
     @include tablet__media {
         left: 200px;
     }
-    // @include phone__media {
-    //     left: 300px;
-    // }
+    @include phone__media {
+        right: -10px;
+    }
 }
 
 .benefits__img2 {
@@ -124,4 +124,20 @@
         position: relative;
         right: 100px;
     }
+}
+
+.benefits__img-tablet {
+    @include tablet__media {
+        position: relative;
+    left: 200px;
+    }
+    @include phone__media {
+        position: relative;
+        right: 300px;
+    }
+}
+
+.benefits__img3-tablet {
+    position: relative;
+    left: 270px;
 }

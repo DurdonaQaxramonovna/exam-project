@@ -27,7 +27,7 @@
     max-width: 768px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .container {
     padding: 0 32px;
   }
@@ -38,7 +38,7 @@
   justify-content: space-between;
   margin-top: 22px;
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .header__nav {
     display: block;
   }
@@ -48,12 +48,12 @@
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .nav {
     display: none;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .nav__item {
     margin-top: 16px;
   }
@@ -84,7 +84,7 @@
   transition: 0.3s;
   border: 1px solid transparent;
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .btn__none {
     display: none;
   }
@@ -108,13 +108,13 @@
     max-width: 768px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .container {
     padding: 0 32px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .logo {
     width: 75.5px;
     height: 20px;
@@ -136,7 +136,7 @@
     background-image: url(../../public/img/tabler-hero-bg.jpg);
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .hero {
     background-image: url(../../public/img/phone-hero-bg.png);
   }
@@ -157,7 +157,7 @@
     padding-top: 137px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .hero__title {
     width: 311px;
     font-size: 40px;
@@ -181,7 +181,7 @@
     text-align: center;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .hero__text {
     font-size: 15px;
     line-height: 25px;
@@ -200,7 +200,7 @@
     left: 35%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .hero__btn {
     margin-top: 26px;
     left: 20%;
@@ -224,10 +224,10 @@
   .services__line {
     rotate: 90deg;
     right: 360px;
-    top: 0;
+    top: -50px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .services__line {
     display: none;
   }
@@ -250,7 +250,7 @@
     justify-content: space-between;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .services__box {
     display: block;
     margin-right: 0;
@@ -272,7 +272,7 @@
     margin-left: 79px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .services__box--title {
     font-size: 20px;
     line-height: 28px;
@@ -299,7 +299,7 @@
     margin-left: 79px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .services__box--subtitle {
     margin-top: 24px;
     width: 311px;
@@ -313,10 +313,18 @@
   width: 56px;
   height: 56px;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
+  .services__icon {
+    position: relative;
+    left: 58px;
+    top: 45px;
+  }
+}
+@media (max-width: 576px) {
   .services__icon {
     position: relative;
     left: 130px;
+    top: 0;
   }
 }
 
@@ -339,7 +347,7 @@
     text-align: center;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .benefits__title {
     font-size: 32px;
     line-height: 32px;
@@ -362,7 +370,7 @@
     text-align: center;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .benefits__subtitle {
     width: 311px;
     position: relative;
@@ -391,13 +399,14 @@
   }
 }
 
-.benefits__img {
-  position: relative;
-  left: 128.9px;
-}
 @media (max-width: 768px) {
   .benefits__img {
     left: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .benefits__img {
+    right: -10px;
   }
 }
 
@@ -456,6 +465,24 @@
   }
 }
 
+@media (max-width: 768px) {
+  .benefits__img-tablet {
+    position: relative;
+    left: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .benefits__img-tablet {
+    position: relative;
+    right: 300px;
+  }
+}
+
+.benefits__img3-tablet {
+  position: relative;
+  left: 270px;
+}
+
 .sign {
   background-image: url(../../public/img/sign-bg.png);
   background-repeat: no-repeat;
@@ -468,7 +495,7 @@
     background-image: url(../../public/img/sign-in-tablet.png);
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .sign {
     background-image: url(../../public/img/sign-in-tablet.png);
   }
@@ -487,7 +514,7 @@
     left: 200px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .sign__wrapper {
     left: 100px;
   }
@@ -500,10 +527,11 @@
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -2.14286px;
-  max-width: 315px;
+  color: #FFFFFF;
+  width: 315px;
   margin-top: 102px;
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .sign__title {
     font-size: 32px;
     line-height: 32px;
@@ -522,7 +550,7 @@
   display: flex;
   margin-right: 18px;
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .appstore {
     width: 113.57px;
     height: 40px;
@@ -538,7 +566,7 @@
   color: #495567;
   margin-left: 12px;
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .appstore__span {
     margin-left: 0;
     color: #495567;
@@ -559,7 +587,7 @@
   color: #495567;
   margin-left: 12px;
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .appstore__link {
     font-size: 15px;
     line-height: 20px;
@@ -581,7 +609,7 @@
     right: 25px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .get-in-margin {
     position: relative;
     right: 15px;
@@ -592,7 +620,7 @@
   min-height: 96px;
   background: #333A44;
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .footer {
     width: 375px;
     height: 438px;
@@ -610,13 +638,13 @@
 .footer-nav {
   padding-top: 25px;
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .footer-nav {
     display: block;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .nav__footer {
     display: block;
     position: relative;
@@ -625,7 +653,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .footer__icons {
     position: relative;
     top: 180px;
